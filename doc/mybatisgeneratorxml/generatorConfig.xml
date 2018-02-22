@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry
+		location="E:/developtools/eclipse-jee-neon-3-win32/workspace/edu_dao/mybatisgeneratorxml/mysql-connector-java-5.1.41-bin.jar" />
+	<context id="context1">
+		<jdbcConnection
+			connectionURL="jdbc:mysql://192.168.0.198:3306/edudb?useUnicode=true"
+			driverClass="com.mysql.jdbc.Driver" password="edudbuser" userId="edudbuser" />
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		<javaModelGenerator targetPackage="com.xhl.edu.dto"
+			targetProject="edu_mybatisgenerator/src" />
+		<sqlMapGenerator targetPackage="com.xhl.edu.dao"
+			targetProject="edu_mybatisgenerator/src" />
+		<javaClientGenerator targetPackage="com.xhl.edu.dao"
+			targetProject="edu_mybatisgenerator/src" type="XMLMAPPER" />
+		<table tableName="t_edu_course" domainObjectName="course.CourseDto" mapperName="course.CourseDao"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+			<!-- <columnOverride column="???" property="???" /> -->
+		</table>
+		<table tableName="t_edu_order" domainObjectName="order.OrderDto" mapperName="order.OrderDao"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+			<!-- <columnOverride column="???" property="???" /> -->
+		</table>
+		<table tableName="t_edu_user" domainObjectName="user.UserDto" mapperName="user.UserDao"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+			<!-- <columnOverride column="???" property="???" /> -->
+		</table>
+		<table tableName="t_operate_log_1" domainObjectName="log.OperateLogDto" mapperName="log.OperateLogDao"
+			enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
+			<!-- <columnOverride column="???" property="???" /> -->
+		</table>
+		
+	</context>
+</generatorConfiguration>
